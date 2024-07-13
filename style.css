@@ -1,0 +1,295 @@
+/*################### Defaults #################*/
+nav, header, footer {
+    display: block;
+}
+
+footer {
+    line-height: 1.4;
+    text-align: left;
+    padding-top: 30px; 
+    padding-left: 10%;
+    padding-bottom: 200px;
+    background-image: linear-gradient(dimgray, black)
+}
+
+footer h1 {
+    font-size: 24px;
+    color: aliceblue;
+}
+
+footer ul {
+    list-style: none;
+    padding: 0;
+}
+
+footer ul li {
+    font-size: 20px;
+    color: aliceblue;
+    margin: auto;
+}
+
+body {
+    margin: 0;
+}
+
+label{
+    font-size: 20px;
+    font-weight: bold;
+}
+
+p {
+    font-size: 16px;
+    line-height: 1.2;
+}
+
+article p {
+    font-size: 20px;
+    line-height: 1.4;
+    padding: 20px;
+}
+
+.container{
+    width: 100%;
+    margin: auto;
+    padding-top: 4%;
+    padding-bottom: 4%;
+    box-shadow: 0 5px 10px 0 rgba(0,0,0,0.2);
+}
+
+.row {
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.row::after{
+    display: table;
+    clear: both;
+    content: "";
+}
+
+button {
+    display: block;
+    font-size: 24px;
+    font-weight: bold;
+    text-align: center;
+    text-transform: uppercase;
+    color: aliceblue;
+    background-color: deepskyblue;
+    border: none;
+    border-radius: 4px;
+    padding: 10px 30px;
+    margin: 5px;
+}
+
+button:hover{
+    background-color: lightskyblue;
+    cursor: pointer;
+}
+
+.col-1 {width: 8.33%;}
+.col-2 {width: 16.66%;}
+.col-3 {width: 25%;}
+.col-4 {width: 33.33%;}
+.col-5 {width: 41.66%;}
+.col-6 {width: 50%;}
+.col-7 {width: 58.33%;}
+.col-8 {width: 66.66%;}
+.col-9 {width: 75%;}
+.col-10 {width: 83.33%;}
+.col-11 {width: 91.66%;}
+.col-12 {width: 100%;}
+
+/*################### Nav Bar #################*/
+nav{
+    width: 100%;
+    margin: 0;
+}
+
+nav ul{
+    background-color: whitesmoke;
+    overflow: hidden;
+    margin: 0;
+    padding: 0;
+}
+
+ul.topnav li{
+    list-style: none;
+    float: left;
+}
+
+ul.topnav li.topnav-rigth {
+    float: right;
+}
+
+ul.topnav li a {
+    display: block;
+    text-decoration: none;
+    min-height: 16px;
+    text-align: center;
+    padding: 14px;
+    text-transform: uppercase;
+    color: dimgrey;
+}
+
+ul.topnav li a:hover {
+    background-color: lightskyblue;
+    color: aliceblue;
+}
+
+ul.topnav li.dropdownIcon {
+    display: none;
+}
+
+/*############### Custom Style #################*/
+
+#section-1-gradient{
+    background-image: linear-gradient(lightskyblue, deepskyblue);
+}
+
+.leftside-col {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;  
+}
+
+.rightside-col {
+    display: block;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;  
+}
+
+/*################### Form #################*/
+
+h1.large {
+    width: 60%;
+    font-size: 48px;
+    color: aliceblue;
+    margin: 0;
+    line-height: 70px;
+    text-align: left;
+}
+
+form h2 {
+    width: 60%;
+    font-size: 20px;
+    color:aliceblue;
+    margin-bottom: 0 0 10px 0;
+}
+
+input.inputbox {
+    font-size: 12px;
+    width: 60%;
+    min-width: 100px;
+    padding: 8px 0px 8px 5px;
+    border-radius: 3px;
+    border: none;
+    outline: none;
+}
+
+/*################### Video #################*/
+.video-container iframe{
+    margin: auto;
+    display: block;
+    width: 90%;
+    height: 350px;
+}
+
+/*################### Box #################*/
+header.section-2 {
+    font-size: 28px;
+    text-align: center;
+}
+
+header.section-2 h1{
+    margin: 3% 0 0 0;
+}
+
+div.box{
+    text-align: center;
+    background-color: white;
+    box-shadow: 0 5px 10px 0 rgba(0,0,0,0.2);
+    padding: 40px 30px 80px 30px;
+    margin: 24px;
+}
+
+div.icon img{
+    width: 30%;
+    margin: 20px;
+}
+
+button.learn-more {
+    margin: auto;
+}
+
+/*################### Article #################*/
+div.profile img{
+    width: 50%;
+    border-radius: 50%;
+    display: block;
+    margin: auto;
+    box-shadow: 5px 10px 10px 0 rgba(0,0,0,0.2);
+}
+
+
+
+
+
+
+
+
+
+/*################### Mobile #################*/
+
+/*################### Nav Bar #################*/
+@media screen and (max-width: 800px){
+    ul.topnav li:not(:nth-child(1)){
+        display: none;
+    }
+    
+    ul.topnav li.dropdownIcon {
+        display: block;
+        float: right;
+    }
+    
+    ul.topnav.responsive li.dropdownIcon {
+        position: absolute;
+        top: 0;
+        right: 0;
+    }
+    
+    ul.topnav.responsive{
+        position: relative;
+    }
+    
+    ul.topnav.responsive li{
+        display: inline;
+        float: none;
+    }
+    
+    ul.topnav.responsive li a{
+        display: block;
+        text-align: left;
+    }
+    
+    /*################### Form #################*/
+    .col-4, .col-5, .col-6, .col-7 {
+        width: 100%;
+        margin-bottom: 30px;
+    }
+    
+    .col-3.responsive {
+        width: 50%;
+    }
+}
+
+
+
+
+
+
+
+

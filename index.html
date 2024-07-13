@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>MindLess - Page</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <nav>
+        <ul class="topnav" id="navbar">
+            <li><a href="#home">Home</a></li>
+            <li><a href="#news">News</a></li>
+            <li><a href="#contact">Contact</a></li>
+            <li><a href="#about">About</a></li>
+            <li class="topnav-rigth"><a href="#signup">Sign Up</a></li>
+            <li class="topnav-rigth"><a href="#signin">Sign In</a></li>
+            <li class="dropdownIcon"><a href="javascript:void(0)" onclick="handleDropdown()">&#9776</a></li>
+        </ul>
+    </nav>
+    
+    <div class="container" id="section-1-gradient">
+        <div class="row">
+            <div class="col-6">
+                <div class="leftside-col">
+                    <h1 class="large">Crazy Radness</h1>
+                    <h1 class="large">Made for Devslopers</h1>
+                </div>
+                    <form>
+                        <div class="leftside-col">
+                            <h2>Username</h2>
+                            <input type="text" class="inputbox" placeholder="Username">
+                            <h2>Password</h2>
+                            <input type="password" class="inputbox" placeholder="Password">
+                        </div>
+                    </form>
+            </div>
+            <div class="col-6 rightside-col">
+                <div class="video-container">
+                    <iframe src="https://www.youtube.com/embed/HHBsvKnCkwI?si=Qxi4fZOGfHe34r5i" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+                </div>
+                
+            </div>
+        </div>
+    </div>
+    <header class="section-2">
+        <h1>The Standards of Awesomeness</h1>
+    </header>
+    <div class="container">
+        <div class="row">
+            <div class="col-4">
+                <div class="box">
+                    <div class="icon">
+                        <img src="whatsapp.png">
+                    </div>
+                    <label>Chat with me</label>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+                    </p>
+                </div>
+            </div>
+            <div class="col-4">
+                <div class="box">
+                    <div class="icon">
+                        <img src="visual-basic.png">
+                    </div>
+                    <label>Learn how to code</label>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+                    </p>
+                </div>
+            </div>
+            <div class="col-4">
+                <div class="box">
+                    <div class="icon">
+                        <img src="github.png">
+                    </div>
+                    <label>Access my projects</label>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+                    </p>
+                </div>
+            </div>
+        </div>
+        <div class="col-12">
+            <button class="learn-more">Learn more</button>
+        </div>
+    </div>
+    <div class="container">
+        <div class="row">
+            <div class="col-7">
+                <article>
+                    <p>
+                        Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+                    </p>
+                
+                </article>
+            
+            </div>
+            <div class="col-5">
+                <div class="profile">
+                    <img src="profile.jpg">
+                </div>
+            </div>
+        </div>
+    </div>
+            <footer>
+            <div class="row">
+                <div class="col-3 responsive">
+                    <h1>Company</h1>
+                    <ul>
+                        <li>About</li>
+                        <li>Blogs</li>
+                        <li>Career</li>
+                    </ul>
+                </div>
+                <div class="col-3 responsive">
+                    <h1>Company</h1>
+                    <ul>
+                        <li>About</li>
+                        <li>Blogs</li>
+                        <li>Career</li>
+                    </ul>
+                </div>
+                <div class="col-3 responsive">
+                    <h1>Company</h1>
+                    <ul>
+                        <li>About</li>
+                        <li>Blogs</li>
+                        <li>Career</li>
+                    </ul>
+                </div>
+                <div class="col-3 responsive">
+                    <h1>Company</h1>
+                    <ul>
+                        <li>About</li>
+                        <li>Blogs</li>
+                        <li>Career</li>
+                    </ul>
+                </div>
+            </div>
+        </footer>
+    
+    
+    
+    
+    <script>
+    function handleDropdown(){
+        let x = document.getElementById("navbar");
+        if(x.className === "topnav"){
+            x.className +=" responsive";
+        }else{
+            x.className = "topnav";
+        }
+    }
+    </script>
+</body>
+</html>
