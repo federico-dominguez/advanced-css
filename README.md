@@ -8,9 +8,7 @@ This project showcases my skills in HTML and CSS through an attractive and respo
 ## Screenshots
 
 ![Screenshot](https://github.com/federico-dominguez/advanced-css/blob/master/resources/screenshot-1.png)
-
 ![Screenshot](https://github.com/federico-dominguez/advanced-css/blob/master/resources/screenshot-2.png)
-
 ![Screenshot](https://github.com/federico-dominguez/advanced-css/blob/master/resources/screenshot-3.png)
 
 ## Features
